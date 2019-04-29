@@ -1,0 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AI;
+public class Player : MonoBehaviour 
+{
+    public NavMeshAgent agent;
+    public void Start() {
+        agent = GetComponent<NavMeshAgent> (); //referencing nav agent
+        Debug.Log(gameObject.name);
+    }
+
+    public void Update() {
+        if (Input.GetMouseButtonDown (0)) {
+
+            Vector3 mousePosition = Input.mousePosition;
+            Debug.Log ("Mouse Position: " + mousePosition);
+            Vector3 cam = Camera.main.ScreenToWorldPoint (mousePosition);
+            Debug.Log ("Cam Position: " + cam);
+            var pos = Vector3.one;
+            pos.x = cam.z;
+            pos.z = cam.y;
+            Debug.Log ("Final Position: " + pos);
+            agent.destination = pos;
+        }
+    }
+}
