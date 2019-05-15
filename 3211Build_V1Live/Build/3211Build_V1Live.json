@@ -1,0 +1,14 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Testing DogStuff",
+"dataUrl": "3211Build_V1Live.data.unityweb",
+"asmCodeUrl": "3211Build_V1Live.asm.code.unityweb",
+"asmMemoryUrl": "3211Build_V1Live.asm.memory.unityweb",
+"asmFrameworkUrl": "3211Build_V1Live.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"dataUrl": "must-revalidate"}
+}
